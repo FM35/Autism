@@ -42,3 +42,5 @@ model.fit(train_inputs,
         verbose = 2)
 
 test_loss, test_accuracy = model.evaluate(test_inputs, test_targets)
+print(test_loss)
+print(test_accuracy)

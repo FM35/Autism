@@ -6,6 +6,8 @@ import pandas as pd
 data = arff.loadarff('Autism_Screening_Adult/Autism-Adult-Data.arff')
 Autism_unprocessed = pd.DataFrame(data[0])
 
+print(Autism_unprocessed)
+
 inputs = Autism_unprocessed.drop(['age', 'result'], axis = 1)
 
 for x in inputs:
